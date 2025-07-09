@@ -29,3 +29,11 @@ document.addEventListener('DOMContentLoaded', function() {
         addButton.addEventListener('click', addNewNote);
     }
 });
+document.addEventListener('DOMContentLoaded',function(){
+    const delbutton =document.getElementById('Delete')
+    if(delbutton){
+        delbutton.addEventListener('click', function() {
+            location.reload(); // Reloads the page when Delete button is clicked
+        });
+    }
+})
